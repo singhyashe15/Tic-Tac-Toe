@@ -1,0 +1,196 @@
+*{
+  padding: 0;
+  margin:0;
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 10px;
+}
+
+body{
+  background:url("WhatsApp Image 2024-02-25 at 23.51.14_96f9ed73.jpg");
+}
+
+.Front{
+  width:100%;
+  height:100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Front .front-view{
+  position: relative;
+  top:-5rem;
+  width:50rem;
+  height:50rem;
+}
+.front-view p{
+  font-size: 3rem;
+  text-align: center;
+  font-weight: 700;
+}
+#copyright{
+  font-size: 3rem;
+  text-align: center;
+  margin-top: -2rem;
+}
+.img-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.Front img{
+  height: 30rem;
+  width:30rem;
+  margin-top: 3rem;
+  border-radius: 20%;
+  animation: Img-rotate 5s linear infinite;
+}
+
+@keyframes Img-rotate {
+ from{
+  transform: rotate(0deg);
+ }
+ to{
+  transform: rotate(360deg);
+ }
+}
+.front-view button{
+  padding: 2rem 4rem;
+  margin:20% 37%;
+  border-radius: 35%;
+  background-color: rgb(75, 75, 249);
+  cursor: pointer;
+  font-size: 3rem;
+  color: white;
+  outline: none;
+}
+
+.front-view a{
+  text-decoration: none;
+}
+
+
+.board{
+  position: relative;
+  left:9%;
+  width:135rem;
+  height:100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.New{
+  position: fixed;
+    top: 2rem;
+}
+.New a{
+  text-decoration: none;
+}
+.New button{
+  padding: 1rem 2rem;
+  border-radius: 20%;
+
+  font-size: 2rem;
+  background-color: rgb(244, 92, 92);
+  color: white;
+  cursor: pointer;
+}
+
+.game-board{
+  position: fixed;
+  top:10rem;
+  width: 40rem;
+  height :45rem;
+  border-radius: 20%;
+  background-color: aqua;
+  flex-wrap: wrap;
+}
+.game_name{
+  margin-top: 2rem;
+  font-size: 2.5rem;
+  color:black;
+  margin-left: 35%;
+  font-weight: 700;
+}
+.game-board div{
+  margin: 0rem 1rem 0.7rem 2rem;
+    width: 100%;
+    height: 10rem;
+}
+.game-board div:nth-child(1){
+  margin-top:2rem;
+}
+#btn{
+  width: 10rem;
+  height: 10rem;
+  margin: 0.8rem;
+  border-radius: 20%;
+  vertical-align: top;
+  cursor: pointer;
+  box-shadow: 0 0 1rem rgba(0,0,0,0.3);
+  text-align: center;
+  color: blue;
+  background-color: rgb(53, 157, 242);
+  font-size: 5rem;
+}
+
+.reset{
+  position: fixed;
+  width: 8rem;
+  padding: 1.5rem 2rem;
+  margin: 55rem 50%;
+  font-size: 2rem;
+  border-radius: 5rem;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+}
+#win_declare{
+  position: fixed;
+  top: 60rem;
+  left: 45%;
+  padding: 1rem 2rem;
+  font-size: 3rem;
+  font-weight: 800;
+  border-radius: 20%;
+  cursor: pointer;
+  color: rgb(14, 13, 13);
+  display: none;
+}
+
+
+
+.score1 ,.score2{
+  font-size: 3rem;
+  font-weight:700;
+  padding-left: 5rem;
+  display: block;
+}
+
+@media (max-width:700px)   {
+  .board{
+    width: 45rem;
+    height: 45rem;
+    top:10rem;
+  }
+  .win_declare{
+    left:15rem
+  }
+  .reset{
+    margin: 11rem 44%;
+    width: 11rem;
+    font-size: 3rem;
+    padding: 3rem 1rem 3rem 1.5rem;
+    border-radius: 5rem;
+  }
+  #win_declare{
+    left: 40%;
+    top: 65rem;
+    font-weight: 900;
+  }
+}
